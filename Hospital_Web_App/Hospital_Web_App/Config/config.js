@@ -3,7 +3,8 @@
 define([], function () {
     function config($routeProvider) {
         $routeProvider.when('/PatientReg', {
-            templateUrl: 'Patient_Registration/_patientRegistration.html'
+            templateUrl: 'Patient_Registration/_patientRegistration.html',
+            controller: 'PatientRegiCtrl'
         })
        .when('/PaymentRecvForm', {
            templateUrl: 'Payment/_paymentRecieveForm.html'
