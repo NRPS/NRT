@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -81,7 +82,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Charges.cs" />
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\IndoorPatient.cs" />
+    <Compile Include="Models\IndoorPatientDetails.cs" />
+    <Compile Include="Models\Medicine.cs" />
+    <Compile Include="Models\MedicineCompany.cs" />
+    <Compile Include="Models\PatientBill.cs" />
+    <Compile Include="Models\PatientBillDetails.cs" />
     <Compile Include="Models\PatientRegstration.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\PaymentModeDetails.cs" />
+    <Compile Include="Models\ReferedBy.cs" />
+    <Compile Include="Models\Registration.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
