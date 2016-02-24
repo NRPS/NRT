@@ -8,6 +8,7 @@ using System.Web.Http;
 using CommanUtilities;
 using HospitalWebAPI.Models;
 using System.Data;
+using Newtonsoft.Json;
 
 namespace HospitalWebAPI.Controllers
 {
@@ -29,7 +30,7 @@ namespace HospitalWebAPI.Controllers
             {
                 //AddDate = r.Field<DateTime>("AddDate"),
                 PatientID = r.Field<string>("PatientID"),
-                Name = r.Field<string>("Patientname"),
+                Name = r.Field<string>("name"),
  
             }).ToList();
 

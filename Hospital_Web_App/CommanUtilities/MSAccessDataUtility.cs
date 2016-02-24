@@ -19,7 +19,7 @@ namespace CommanUtilities
         {
             if (accessConnection == null)
             {
-                string strAccessConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source = D:\\NRT\\Hospital_Web_App\\Data\\HospitalDB.mdb;Persist Security Info=False;";
+                string strAccessConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source = E:\\2016_Works\\NRT\\Hospital_Web_App\\Data\\HospitalDB.mdb;Persist Security Info=False;";
 
                 accessConnection = new OleDbConnection(strAccessConnectionString);
                 accessConnection.Open();

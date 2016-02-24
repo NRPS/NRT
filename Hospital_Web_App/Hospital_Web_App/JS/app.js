@@ -9,8 +9,9 @@ define(
         'Login/base64Encoder',
         'Login/loginFactory',
         'Login/_signOut',
+        'Patient_Registration/PatientRegiCtrl'
     ],
-    function (Config, RunApp, Login, SignUp, Base64Encoder, logInfactory, SignOutCtrl) {
+    function (Config, RunApp, Login, SignUp, Base64Encoder, logInfactory, SignOutCtrl, PatientRegiCtrl) {
         
         var app = angular.module('hospital', ['ngRoute', 'ngCookies']);
 
@@ -21,7 +22,7 @@ define(
         app.controller('LoginCtrl', Login);
         app.controller('UserRegistrationCtrl', SignUp);
         app.controller('SignOutCtrl', SignOutCtrl)
-
+        app.controller('PatientRegiCtrl', PatientRegiCtrl)
         app.controller('AppCtrl', ['$scope', '$rootScope', '$cookieStore', function ($scope, $rootScope, $cookieStore) {
             if ($cookieStore.get('globals')!=undefined) {
                 $scope.login = false;
