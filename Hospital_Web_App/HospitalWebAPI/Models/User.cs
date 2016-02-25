@@ -5,7 +5,7 @@ using System.Web;
 
 namespace HospitalWebAPI.Models
 {
-    public class User 
+    public class UserMaster
     { 
         public int UserID { get; set; } 
         public string UserName { get; set; }

@@ -31,20 +31,23 @@ namespace CommanUtilities
 
         public bool AddRow(String InsertQuery)
         {
-            command.CommandText = InsertQuery;
+            ExecuteNonQuery(InsertQuery);
+            return true;
+        }
+        public bool ExecuteNonQuery(String Query)
+        {
+            command.CommandText = Query;
             command.ExecuteNonQuery();
              return true;
         }
         public bool DeleteRow(String DeleteQuery)
         {
-            command.CommandText = DeleteQuery;
-            command.ExecuteNonQuery();
+            ExecuteNonQuery(DeleteQuery);
             return true;
         }
         public bool UpdateRow(String UpdateQuery)
         {
-            command.CommandText = UpdateQuery;
-            command.ExecuteNonQuery();
+            ExecuteNonQuery(UpdateQuery);
             return true;
         }
         public Int32 GetScalarValue(String Query)
